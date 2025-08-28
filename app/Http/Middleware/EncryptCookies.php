@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncryptCookies;
+
+class EncryptCookies extends BaseEncryptCookies
+{
+    /**
+     * The names of the cookies that should not be encrypted.
+     *
+     * @var array<int, string>
+     */
+    protected $except = [
+        // tambahkan cookie yang tidak ingin dienkripsi di sini
+    ];
+}
